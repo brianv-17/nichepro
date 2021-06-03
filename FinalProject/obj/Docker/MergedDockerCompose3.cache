@@ -1,0 +1,16 @@
+services:
+  finalproject:
+    build:
+      context: /Users/brianvazquez/Desktop/MSCA_Project/FinalProject
+      dockerfile: FinalProject/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: finalproject
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - /Users/brianvazquez/.aspnet/https:/root/.aspnet/https:ro
+    - /Users/brianvazquez/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'

@@ -1,0 +1,50 @@
+﻿<Properties StartupConfiguration="{A2580EA9-7010-4E9D-B5C5-BC2E77244079}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NicheFinalPro/Data/ApplicationDbContext.cs">
+    <Files>
+      <File FileName="NicheFinalPro/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
+      <File FileName="NicheFinalPro/Controllers/UsersController.cs" />
+      <File FileName="NicheFinalPro/Controllers/HomeController.cs" />
+      <File FileName="NicheFinalPro/Controllers/EventsController.cs" />
+      <File FileName="NicheFinalPro/Startup.cs" />
+      <File FileName="NicheFinalPro/Views/Home/Privacy.cshtml" />
+      <File FileName="NicheFinalPro/Views/Home/Index.cshtml" />
+      <File FileName="NicheFinalPro/Views/Users/Index.cshtml" />
+      <File FileName="NicheFinalPro/Views/Events/Delete.cshtml" />
+      <File FileName="NicheFinalPro/ViewModel/RegisterViewModel.cs" />
+      <File FileName="NicheFinalPro/ViewModel/LoginViewModel.cs" />
+      <File FileName="NicheFinalPro/Views/Users/Account.cshtml" Line="1" Column="50" />
+      <File FileName="NicheFinalPro/Views/Events/Index.cshtml" />
+      <File FileName="NicheFinalPro/Models/User.cs" />
+      <File FileName="NicheFinalPro/Data/ApplicationDbContext.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="NicheFinalPro" expanded="True">
+            <Node name="NicheFinalPro" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True">
+                <Node name="ApplicationDbContext.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="ViewModel" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Events" expanded="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+                <Node name="Users" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.NicheFinalPro PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

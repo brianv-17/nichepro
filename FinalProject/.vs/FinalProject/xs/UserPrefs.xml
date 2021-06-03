@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{789DBC39-3691-4053-A5BA-C7FA5D1F437C}|Default">
+  <MonoDevelop.Ide.ItemProperties.FinalProject PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FinalProject/Views/Create/CreatePage.cshtml">
+    <Files>
+      <File FileName="FinalProject/Views/Shared/_Layout.cshtml" Line="23" Column="30" IsPinned="True" />
+      <File FileName="FinalProject/Controllers/CreateController.cs" Line="20" Column="48" />
+      <File FileName="FinalProject/Models/Event.cs" Line="1" Column="1" />
+      <File FileName="FinalProject/Models/User.cs" Line="1" Column="1" />
+      <File FileName="FinalProject/Views/Create/CreatePage.cshtml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FinalProject" expanded="True">
+            <Node name="docker-compose" expanded="True" />
+            <Node name="FinalProject" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Create" expanded="True">
+                  <Node name="CreatePage.cshtml" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Linkep";
+}
+
+<div class="text-center">
+    <h1 class="display-4"> Linkep</h1>
+    <p>Linkep is an application inspired by the ending of the pandemic, an application dedicated to bring people together and to advocate social connections.</p>
+    <p>Whether you are an introvert and your spot is a book store or if you are an extrovert that likes a engaging bar, create an event for others to join!</p>
+</div>
+<div>
+    <h2>The concept is simple : </h2>
+    <p>Choose a place youd like to host your event!</p>
+    <p>Note: only places that have agreed to accept Linkep request are shown</p>
+    <br />
+    <p>Have an alotted time for how long you intend to host the event</p>
+    <br/>
+    <p>Give your event a name, the catchier the better</p>
+    <br/>
+    <p>Last but not least, describe what you would like to do during the event</p>
+    <br/>
+    <p>Once submitted your event is going to be able to be viewed by others!</p>
+</div>
+<div>
+    <h2>Registration</h2>
+    <form action="/register" method="POST">
+        <label for="first_name">First Name:</label>
+        <input type="text" name="first_name" />
+        <label for="last_name">Last Name:</label>
+        <input type="text" name="last_name" />
+        <label for="email">Email:</label>
+        <input type="text" name="email" />
+        <label for="password">Password:</label>
+        <input type="password" name="password" />
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" name="confirm_password" />
+        <button type='submit'>Register</button>
+    </form>
+</div>
+<div>
+    <h4>Login</h4>
+    <form action="/login" method="POST">
+        <label for="email">Email:</label>
+        <input type="text" name="email" />
+        <label for="password">Password:</label>
+        <input type="password" name="password" />
+        <button type='submit'>Log In</button>
+    </form>
+</div>
+
