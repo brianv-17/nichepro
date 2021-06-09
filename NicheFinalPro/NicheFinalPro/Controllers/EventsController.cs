@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NicheFinalPro.Data;
@@ -16,11 +17,24 @@ namespace NicheFinalPro.Controllers
         {
             _context = context;
         }
-        public async Task<IActionResult> Index()
+        //[Authorize]
+        public IActionResult Index()
         {
-            var events = await _context.Events.ToListAsync();
+            if (!this.User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Login","Account");
+            }
+
+
+
+            var events = _context.Events.ToList();
             return View(events);
         }
+        //public async Task<IActionResult> Index()
+        //{
+        //    var events = await _context.Events.ToListAsync();
+        //    return View(events);
+        //}
         [HttpGet]
         public IActionResult Create()
         {

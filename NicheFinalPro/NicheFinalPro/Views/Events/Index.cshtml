@@ -1,45 +1,52 @@
 ﻿@model List<NicheFinalPro.Models.Event>
 <div class="row">
     <div class="col-md-12">
-        <a asp-action="Create" asp-controller="Events" class="btn btn-success" >
+        <a asp-action="Create" asp-controller="Events" class="btn btn-success">
             Creat an Event
+        </a>
+    </div>
+    <div class="col-md-12">
+        <a asp-action="Create" asp-controller="Events" class="btn btn-success">
+            My events
         </a>
     </div>
     <div class="col-md-12">
         <table class="table">
             <thead>
                 <tr>
-                    <td>ID</td>
+                    @*<td>ID</td>*@
                     <td>Title</td>
                     <td>Place</td>
                     <td>Theme</td>
                     <td>Description</td>
                     <td>Date</td>
+                    <td>Attendees</td>
                     <td>Edit | Delete</td>
                 </tr>
             </thead>
             <tbody>
                 @foreach (var item in Model)
-            {
+                {
 
-                <tr>
-                    <td>@item.Id</td>
-                    <td>@item.Title</td>
-                    <td>@item.Place</td>
-                    <td>@item.Theme</td>
-                    <td>@item.Description</td>
-                    <td>@item.Date</td>
-                    <td>
-                        <a asp-action="Edit" asp-controller="Events" class="btn btn-warning" asp-route-id="@item.Id">
-                            Edit
-                        </a>
-                         | 
-                        <a asp-action="Delete" asp-controller="Events" class="btn btn-danger" asp-route-id="@item.Id">
-                        Delete
-                        </a>
-                    </td>
-                </tr>
-            }
+                    <tr>
+                        @*<td>@item.Id</td>*@
+                        <td>@item.Title</td>
+                        <td>@item.Place</td>
+                        <td>@item.Theme</td>
+                        <td>@item.Description</td>
+                        <td>@item.Date</td>
+                        <td>Attendeeslist</td>
+                        <td>
+                            <a asp-action="Edit" asp-controller="Events" class="btn btn-warning" asp-route-id="@item.Id">
+                                Edit
+                            </a>
+                            |
+                            <a asp-action="Delete" asp-controller="Events" class="btn btn-danger" asp-route-id="@item.Id">
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                }
             </tbody>
         </table>
     </div>

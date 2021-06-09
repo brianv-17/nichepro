@@ -42,7 +42,7 @@ namespace NicheFinalPro
          .AddEntityFrameworkStores<UserContext>();
 
 
-
+            services.AddSession();
 
 
             services.AddDbContext<ApplicationDbContext>(options =>
@@ -77,7 +77,7 @@ namespace NicheFinalPro
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

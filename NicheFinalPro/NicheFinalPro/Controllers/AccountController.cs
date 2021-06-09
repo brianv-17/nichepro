@@ -14,21 +14,16 @@ using Microsoft.EntityFrameworkCore;
 
 namespace NicheFinalPro.Controllers
 {
-    public class UsersController : Controller
+    public class AccountController : Controller
     {
         
         private SignInManager<User> _signInManager;
         private UserManager<User> _userManager;
 
-        public UsersController(SignInManager<User> signInManager, UserManager<User> userManager)
+        public AccountController(SignInManager<User> signInManager, UserManager<User> userManager)
         {
             _signInManager = signInManager;
             _userManager = userManager;
-        }
-
-        public IActionResult Index()
-        {
-            return View();
         }
 
         public IActionResult Login()
@@ -50,7 +45,7 @@ namespace NicheFinalPro.Controllers
                 var result = await _signInManager.PasswordSignInAsync(loginModel.UserName, loginModel.Password, loginModel.RememberMe, false);
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "Events");
                 }
             }
             ModelState.AddModelError("", "Failed to Login");
@@ -84,20 +79,27 @@ namespace NicheFinalPro.Controllers
                 var result = await _userManager.CreateAsync(user, registerModel.Password);
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Index", "Account");
+                    return RedirectToAction("Login", "Account");
                 }
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError("", error.Description);
                 }
             }
-            return View();
+            return RedirectToRoute("Home","Index");
         }
         [HttpGet]
-        public async Task<IActionResult> Account(String username)
+        public async Task<IActionResult> Account()
         {
-            var user = await _userManager.Users.FirstOrDefaultAsync(p => p.UserName == username);
-            return View(user);
+            if (this.User.Identity.IsAuthenticated)
+            {
+                string userid = HttpContext.User.Identity.Name;
+                var user = await _userManager.Users.FirstOrDefaultAsync(p => p.Id == userid);
+                return View(user);
+                //HttpContext.Session.SetString("uname", this.User.Identity.Name);
+                //return RedirectToAction("Index", "Home");
+            }
+            return RedirectToAction("Login", "Account");
         }
     }
 }

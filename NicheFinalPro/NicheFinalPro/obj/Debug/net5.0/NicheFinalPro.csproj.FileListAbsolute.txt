@@ -70,7 +70,6 @@
 /Users/brianvazquez/Desktop/MSCA_Project/NicheFinalPro/NicheFinalPro/obj/Debug/net5.0/Razor/Views/Events/Create.cshtml.g.cs
 /Users/brianvazquez/Desktop/MSCA_Project/NicheFinalPro/NicheFinalPro/obj/Debug/net5.0/Razor/Views/Events/Edit.cshtml.g.cs
 /Users/brianvazquez/Desktop/MSCA_Project/NicheFinalPro/NicheFinalPro/obj/Debug/net5.0/Razor/Views/Events/Delete.cshtml.g.cs
-/Users/brianvazquez/Desktop/MSCA_Project/NicheFinalPro/NicheFinalPro/obj/Debug/net5.0/Razor/Views/Users/Index.cshtml.g.cs
 /Users/brianvazquez/Desktop/MSCA_Project/NicheFinalPro/NicheFinalPro/bin/Debug/net5.0/Microsoft.AspNetCore.Cryptography.Internal.dll
 /Users/brianvazquez/Desktop/MSCA_Project/NicheFinalPro/NicheFinalPro/bin/Debug/net5.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 /Users/brianvazquez/Desktop/MSCA_Project/NicheFinalPro/NicheFinalPro/bin/Debug/net5.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -81,4 +80,5 @@
 /Users/brianvazquez/Desktop/MSCA_Project/NicheFinalPro/NicheFinalPro/bin/Debug/net5.0/Microsoft.AspNetCore.Identity.UI.dll
 /Users/brianvazquez/Desktop/MSCA_Project/NicheFinalPro/NicheFinalPro/bin/Debug/net5.0/Microsoft.Extensions.FileProviders.Embedded.dll
 /Users/brianvazquez/Desktop/MSCA_Project/NicheFinalPro/NicheFinalPro/obj/Debug/net5.0/NicheFinalPro.MvcApplicationPartsAssemblyInfo.cs
-/Users/brianvazquez/Desktop/MSCA_Project/NicheFinalPro/NicheFinalPro/obj/Debug/net5.0/Razor/Views/Users/Account.cshtml.g.cs
+/Users/brianvazquez/Desktop/MSCA_Project/NicheFinalPro/NicheFinalPro/obj/Debug/net5.0/Razor/Views/Account/Account.cshtml.g.cs
+/Users/brianvazquez/Desktop/MSCA_Project/NicheFinalPro/NicheFinalPro/obj/Debug/net5.0/Razor/Views/Account/Login.cshtml.g.cs

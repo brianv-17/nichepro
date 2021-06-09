@@ -17,7 +17,7 @@
   <ItemGroup>
     <Folder Include="Data\" />
     <Folder Include="Views\Events\" />
-    <Folder Include="Views\Users\" />
+    <Folder Include="Views\Account\" />
     <Folder Include="ViewModel\" />
   </ItemGroup>
 </Project>
